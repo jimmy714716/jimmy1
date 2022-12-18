@@ -1,0 +1,51 @@
+# Repitition Structures -- causes a statement(s) to execute repeatedly
+
+# while loop -- pretest loop, meaning it tests the condition before performing the iteration; therefore, you need to perform some steps before the loop
+
+# for loop -- count-controlled loop
+
+num1 = int(input('Enter a number 1:'))
+num2 = int(input('Enter a number 2:'))
+total = num1 + num2
+print (total)
+
+#while loop program #1
+
+going = 'y'
+while going == 'y':
+ num1 = int(input('Enter a number 1:')) #must indent
+ num2 = int(input('Enter a number 2:'))
+ total = num1 + num2
+ going = input('Keep going? Enter y or n:')
+
+#for loop program
+
+for num in [1, 2, 3, 4, 5]:
+ print (num)
+
+for name in {'Sam', 'Mary', 'Cole']:
+ print (name)
+ 
+for combo in [10, 20.34, 'Evan']:
+ print (combo)
+
+for num in range(5): #print 0 to 4 #number after range will never be in output. range starts at 0.
+ print (num)
+
+for num in range(1, 11, 2):
+ print ('This will print only odd numbers:', num)
+
+MAX = 2
+for counter in range(MAX):
+  num = int(input('Enter number:'))
+  print(num)
+
+#for loop program
+# running total
+
+total = 0 #total starts with zero and adds all numbers inputted in the range
+for counter in range (3):
+  num = int(input('Enter a number:'))
+  total = total + num
+  print (total)
+ 
